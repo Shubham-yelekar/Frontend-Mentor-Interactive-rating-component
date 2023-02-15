@@ -17,7 +17,7 @@
 <body>
 
   <!-- Rating state start -->
-  <div class="card">
+  <div class="card rating-card ">
     
       <div class="star">
         <img src="/images/icon-star.svg" alt="">
@@ -29,14 +29,14 @@
       <article>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
       </article>
       <ul class="ratings">
-        <li><button type="submit">1</button></li>
-        <li><button type="submit">2</button></li>
-        <li><button type="submit">3</button></li>
-        <li><button type="submit">4</button></li>
-        <li><button type="submit">5</button></li>
+        <li><button class="btn">1</button></li>
+        <li><button class="btn">2</button></li>
+        <li><button class="btn">3</button></li>
+        <li><button class="btn"">4</button></li>
+        <li><button class="btn">5</button></li>
       </ul>
-      <button class="btn-submit" type="submit">
-        SUBMIT
+      <button class="btn-submit" id="submit" type="submit">
+        <p>SUBMIT</p>
       </button>
     
   </div>
@@ -46,20 +46,20 @@
   <!-- Thankyou state end -->
 
 
-  <div class="card">
+  <div class="card thankyou hidden">
     
-      <div class="star"> 
+      <div> 
         <img src="/images/illustration-thank-you.svg" alt="">
       </div>
       <p>
-        You've selected <span class="rating-star">5</span> out of 5
+        You've selected <span id="rating-star">5</span> out of 5
       </p>
-      <article>We appreciate you taking the time to give a rating. <br>
+      <article>We appreciate you taking the time to give a rating.
         If you ever need more support, don't hesitate to get in touch!
       </article>
       
-      <button type="submit">
-        Rate Again
+      <button id="rate-again" class="btn-submit" type="submit">
+       <p>RATE AGAIN</p> 
       </button>
     
   </div>
@@ -68,5 +68,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Shubham Yelekar</a>.
   </div>
+  <script src="./main.js"></script>
 </body>
 </html>
